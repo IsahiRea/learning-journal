@@ -1,6 +1,6 @@
 # Learning Journal
 
-This repository contains a learning journal/blog. It’s a straightforward project designed to improve my understanding of Responsive Web Design.
+This repository contains a sample learning journal - a blog where I document my journey as a lifelong learner and software developer. This space is a collection of notes, reflections, and tutorials. It’s a straightforward project designed to improve my understanding of Responsive Web Design.
 
 ## Getting Started
 

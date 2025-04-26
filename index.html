@@ -4,39 +4,73 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
 
         <header>
-            <nav>
-                <div class="logo-container">
-                    <img src="images/logo.png" alt="Comment Bubble" class="logo">
-                    <p>My learning journey</p>
-                </div>
+            
+            <div class="logo-container">
+                <img src="images/logo.png" alt="Comment Bubble" class="logo">
+                <p>My learning journal</p>
+            </div>
+
+            <nav class="nav-container">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About me</a></li>
                 </ul>
             </nav>
 
-            <section class="hero-post">
-                <p>July 23, 2025</p>
-                <h1>My new journey as a bootcamp student.</h1>
-                <p>After several months of learning in the Frontend Developer Career Path, I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.</p>
-            </section>
         </header>    
-
-
+        
+        
         <main>
-            <h2>My Learning Journal</h2>
-            <p>Welcome to my learning journal! Here, I will document my learning journey and share my thoughts and experiences.</p>
+            <section class="hero-post">
+                <img src="images/head.png" alt="A picture of a person with a laptop and a cup of coffee." class="hero-image">
+                <div class="hero-details">
+                    <p class="hero-date">July 23, 2025</p>
+                    <h1 class="hero-title">My new journey as a bootcamp student.</h1>
+                    <p class="desc">After several months of learning in the Frontend Developer Career Path, I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.</p>
+                </div>
+            </section>
+            
+            <section class="posts-container">
+                <article class="post">
+                    <img src="images/blog1.png" alt="Picture of a laptop with a code editor open." class="post-image">
+                    <div class="post-details">
+                        <p class="post-date">July 23, 2025</p>
+                        <h2>Blog one</h2>
+                        <p class="desc post-desc">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
+                    </div>
+                </article>
+
+                <article class="post">
+                    <img src="images/blog2.png" alt="Picture of a hand holding a lightbulb with a gradient background from blue to pink." class="post-image">
+                    <div class="post-details">
+                        <p class="post-date">July 23, 2025</p>
+                        <h2>Blog two</h2>
+                        <p class="post-desc">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
+                    </div>
+                </article>
+
+                <article class="post">
+                    <img src="images/blog3.png" alt="Picture of a laptop with the words 'I design and develop experiences that make people's lives simple'." class="post-image">
+                    <div class="post-details">
+                        <p class="post-date">July 23, 2025</p>
+                        <h2>Blog three</h2>
+                        <p class="post-desc">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
+                    </div>
+                </article>
+
+                <a href="#" class="view-more">View More</a>
+            </section>
         </main>
 
         <footer>
             <p>My Learning Journal</p>
-            <p>Copyright &copy;2025</p>
+            <p class="copyright">Copyright &copy;2025</p>
         </footer>
 
         <script src="index.js" type="module"></script>

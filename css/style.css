@@ -7,6 +7,7 @@ body {
     margin: 0;
     font-family: 'Source Sans 3', sans-serif;
     background-color: #FFFFFF;
+    min-width: 400px;
 }
 
 /* Header*/
@@ -14,7 +15,6 @@ header {
     display: flex;
     justify-content: space-between;
     width: 90%;
-    /* max-width: 414px; */
     margin: 0 auto;
     padding: .5em 0;
 }
@@ -99,16 +99,106 @@ nav ul a:hover {
     line-height: 1;
 }
 
+/* About Me */
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    margin: 1em;
+}
+
+.profile-image {
+    height: 170px;
+    margin-bottom: 1em;
+}
+
+.about-container h1 {
+    width: 90%;
+    font-size: 2.18rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: .5em;
+}
+
+
+/* Indivdual Post */
+.bp-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    margin: 1em;
+    gap: 1em;
+}
+
+.bp-container h1 {
+    font-size: 2rem;
+    width: 90%;
+    line-height: 1;
+}
+
+.bp-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: .5em;
+}
+
+.bp-date {
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+.bp-image {
+    width: 100%;
+    height: 232px;
+    object-fit: cover;
+    object-position:calc(100% - 1em) calc(60% - 1em);
+    border-radius: 3px;
+}
+
+.content {
+    color: #151515;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Filler Content */
+.filler-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    margin: 1em;
+    gap: 1em;
+}
+
 /* Posts */
+.recent-post {
+    text-align: center;
+}
 
 .posts-container {
     display: grid;
     margin: 1em .5em;
 }
 
+.posts-container h3 {
+    text-align: center;
+    font-size: 1rem;
+}
+
 .post {
     padding: 1em;
     flex: 1 374px;
+}
+
+.post:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 
 .post-details {
@@ -141,12 +231,17 @@ nav ul a:hover {
     border-radius: 3px;
 }
 
+main {
+    display: grid;
+}
+
 .view-more {
-   color: #000000;
-   font-size: 1rem;
-   font-weight: 700;
-   text-align: center;
-   margin-bottom: 1em;
+    width: 100px;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 auto 1em;
+    text-align: center;
 }
 
 /* Footer */
@@ -169,6 +264,18 @@ footer p {
 }
 
 /* Typography */
-h1, h2, p {
+h1, h2, h3, p {
     margin: 0;
+}
+
+
+/* TODO: Desktop View */
+/* Media Queries */
+@media (min-width: 768px) {
+    .posts-container {
+        grid-template-columns: repeat(auto-fit, minmax(364px, 1fr));
+        grid-auto-rows: 400px;
+        grid-auto-flow: dense;
+        gap: 1em;
+    }
 }
